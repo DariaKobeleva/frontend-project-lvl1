@@ -8,4 +8,4 @@
 
 `brain-even`
 
-[![asciicast] (https://asciinema.org/a/540073)
+[![asciicast] (https://asciinema.org/a/540073)]
