@@ -9,3 +9,9 @@
 `brain-even`
 
 https://asciinema.org/a/540073
+
+### Calc
+
+`brain-calc`
+
+https://asciinema.org/a/540257
