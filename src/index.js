@@ -1,4 +1,4 @@
-const calc = () => {
+const func = () => {
   console.log("Question");
 
   for (let i = 0; i < 3; i += 1) {
@@ -21,5 +21,5 @@ const calc = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-//export default ;
+export default func;
 
