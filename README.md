@@ -15,3 +15,9 @@ https://asciinema.org/a/540073
 `brain-calc`
 
 https://asciinema.org/a/540257
+
+### NOD
+
+`brain-gcd`
+
+https://asciinema.org/a/541335
