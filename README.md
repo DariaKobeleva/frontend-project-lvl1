@@ -21,3 +21,9 @@ https://asciinema.org/a/540257
 `brain-gcd`
 
 https://asciinema.org/a/541335
+
+### Progression
+
+`brain-progression`
+
+https://asciinema.org/a/541575
