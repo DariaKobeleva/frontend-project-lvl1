@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync";
-import { userName } from "./cli.js";
+import readlineSync from 'readline-sync';
+import { userName } from './cli.js';
 
 const prime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -7,28 +7,30 @@ const prime = () => {
   for (let i = 0; i < 3; i += 1) {
     let resultGame;
     const randomNumber = Math.round(Math.random() * 100);
-    let correctAnswer = "";
+    let correctAnswer = '';
     const isPrime = () => {
       if (randomNumber < 2) {
-        return (correctAnswer = "no");
+        correctAnswer = 'no';
+        return correctAnswer;
       }
 
-      for (let i = 2; i <= randomNumber / 2; i += 1) {
-        if (randomNumber % i === 0) {
-          return (correctAnswer = "no");
+      for (let j = 2; j <= randomNumber / 2; j += 1) {
+        if (randomNumber % j === 0) {
+          correctAnswer = 'no';
+          return correctAnswer;
         }
       }
-
-      return (correctAnswer = "yes");
+      correctAnswer = 'yes';
+      return correctAnswer;
     };
     isPrime();
 
-    console.log(`${"Question:"} ${randomNumber}`);
+    console.log(`${'Question:'} ${randomNumber}`);
 
-    const answer = readlineSync.question("Your answer: ");
+    const answer = readlineSync.question('Your answer: ');
 
     if (answer === correctAnswer) {
-      console.log((resultGame = "Correct!"));
+      console.log((resultGame = 'Correct!'));
     } else {
       resultGame = `"${answer}" is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`;
       console.log(resultGame);

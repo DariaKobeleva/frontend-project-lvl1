@@ -1,8 +1,8 @@
-import readlineSync from "readline-sync";
-import { userName } from "./cli.js";
+import readlineSync from 'readline-sync';
+import { userName } from './cli.js';
 
 const calc = () => {
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
 
   for (let i = 0; i < 3; i += 1) {
     let resultGame;
@@ -25,16 +25,19 @@ const calc = () => {
       case 2:
         question = `${randomNumber1} * ${randomNumber2}`;
         correctAnswer = randomNumber1 * randomNumber2;
+        break;
+
+      default: console.log('Unexpected value');
     }
 
-    console.log(`${"Question:"} ${question}`);
+    console.log(`${'Question:'} ${question}`);
 
-    const answer = Number(readlineSync.question("Your answer: "));
+    const answer = Number(readlineSync.question('Your answer: '));
 
     if (answer === correctAnswer) {
-      console.log((resultGame = "Correct!"));
+      console.log((resultGame = 'Correct!'));
     } else {
-      resultGame = `"${answer}" is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`;
+      resultGame = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`;
       console.log(resultGame);
       return;
     }
