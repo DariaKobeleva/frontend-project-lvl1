@@ -27,3 +27,9 @@ https://asciinema.org/a/541335
 `brain-progression`
 
 https://asciinema.org/a/541575
+
+### isPrime
+
+`brain-prime`
+
+https://asciinema.org/a/541700
